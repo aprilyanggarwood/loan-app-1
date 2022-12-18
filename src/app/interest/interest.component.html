@@ -1,0 +1,43 @@
+<!--
+ Title: interest.component.html
+ Author: Professor Krasso
+ Modified By: April Yang
+ Date: 12/15/2022
+ Description: Assignment 9.2 - Capstone (Delivery)
+ Resources: Material Design https://material.io
+-->
+
+<mat-card class="payment-card mat-elevation-z0">
+  <mat-card-subtitle
+    class="payment-sub"
+    class="payment-sub"
+    style="text-align: center; font-size: 24px"
+    >Your Interest Paid:</mat-card-subtitle
+  >
+  <div>
+    <mat-card-content>
+      <div
+        class="payment-content"
+        class="payment-sub"
+        style="text-align: center; font-size: 24px"
+      >
+        <!-- Passed In values monthlypayment -->
+        {{ "$" + (interest | number : "1.2-2") }}
+      </div>
+    </mat-card-content>
+  </div>
+</mat-card>
+
+<!-- <div style="text-align: center">
+  <mat-label for="interestPaid">Interest paid:</mat-label>
+</div>
+<div style="text-align: center">
+  <mat-form-field fxFlex appearance="fill">
+    <input
+      type="text"
+      name="interestPaid"
+      matInput
+      formControlName="interestPaid"
+    />
+  </mat-form-field>
+</div> -->

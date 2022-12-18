@@ -1,0 +1,77 @@
+<!--
+ Title: about.component.html
+ Author: Professor Krasso
+ Modified By: April Yang
+ Date: 12/15/2022
+ Description: Assignment 9.2 - Capstone (Delivery)
+Resources: Material Design https://material.io
+-->
+
+<div>
+  <h1
+    style="
+      text-align: center;
+      margin-top: -30px;
+      margin-bottom: 30px;
+      color: #eeba30;
+      font-weight: bold;
+    "
+  >
+    {{ aboutUs }}
+  </h1>
+</div>
+
+<!-- 2 column material design layout -->
+<div fxLayout="row wrap">
+  <div fxFlex>
+    <div fxLayout="column" style="text-align: center">
+      <div>
+        <img
+          src="../../assets/loan-calculator.jpg"
+          style="max-width: 350px"
+          alt=""
+        />
+      </div>
+      <!-- <div>
+        <em>
+          Photo from Wikipedia
+          <a
+            class="attribution-link"
+            href="https://upload.wikimedia.org/wikipedia/commons/c/cf/%E5%90%B4%E5%8F%B8%E9%A9%AC%E5%AD%99%E6%AD%A6.jpg"
+            target="_blank"
+            >Sun Tzu</a
+          >
+        </em>
+      </div> -->
+    </div>
+  </div>
+
+  <div fxFlex style="text-align: left">
+    <div fxLayout="column">
+      <h1 class="blue">Loan_App</h1>
+      <p>
+        House Gryffindor 's Loan Calculator App can help you figure out what
+        your monthly payment will be, and the total loan interest you will pay
+        over the life of the loan. Simply enter your loan amount, interest rate
+        and number of years in the form fields and click submit.
+        <br /><br />
+        When shopping for any loan, it is a good idea to use a loan calculator.
+        A loan calculator can help you narrow down your home or car search by
+        showing you what you can pay each month. It can help you compare loan
+        costs and see how differences in interest rates can affect your
+        payments, especially with mortgages.
+        <br /><br />
+        Our loan calculator app can give you an idea of the total cost of the
+        loan expressed in annual percentage rate or APR. It definitely can
+        answer a lot of questions and help you make smart financial decisions.
+        <br /><br />
+        The colors for this app are picked from a house in Harry Potter called
+        Gryffindor. The colors that represent Gryffindor are scarlet and gold,
+        as these colors are associated with fire, or a fiery personality. The
+        house is also represented by a ferocious lion with the following
+        favorable traits: brave, chivalrous, noble, competitive, courageous,
+        adventurous, willing to stand up for others.
+      </p>
+    </div>
+  </div>
+</div>

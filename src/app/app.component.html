@@ -1,0 +1,54 @@
+<!--
+ Title: app.component.html
+ Author: Professor Krasso
+ Modified By: April Yang
+ Date: 12/15/2022
+ Description: Assignment 9.2 - Capstone (Delivery)
+Resources: Material Design https://material.io
+-->
+
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row style="background-color: #d3a625">
+    <!-- <div class="logo">
+      <img src="../assets/in-n-out-books-logo.png" height="80" />
+    </div> -->
+    <div style="width: 80%">
+      <div fxLayout="row wrap" fxLayoutAlign="end start">
+        <button
+          mat-button
+          routerLink="/loan_application"
+          style="color: #ae0001; font-weight: bold"
+        >
+          Loan Application
+        </button>
+        <button
+          mat-button
+          routerLink="/contact"
+          style="color: #ae0001; font-weight: bold"
+        >
+          Contact Us
+        </button>
+        <button
+          mat-button
+          routerLink="/about"
+          style="color: #ae0001; font-weight: bold"
+        >
+          About Us
+        </button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<br />
+<div fxLayout="row wrap">
+  <div fxFlex>
+    <mat-card class="main-container">
+      <br />
+      <br />
+      <mat-card-content>
+        <router-outlet></router-outlet>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
